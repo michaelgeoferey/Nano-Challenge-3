@@ -15,14 +15,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let motionManager = CMMotionManager()
     var player = SKSpriteNode()
     var endNode = SKSpriteNode()
+    var panel = SKSpriteNode()
+
+
     
     override func didMove(to view: SKView) {
-        
         
         self.physicsWorld.contactDelegate = self
         
         player = self.childNode(withName: "player") as! SKSpriteNode
-        
+        panel = self.childNode(withName: "panel") as! SKSpriteNode
         endNode = self.childNode(withName: "finishMaze") as! SKSpriteNode
         
 // set gyro
@@ -49,6 +51,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        let xPlayer = player.position.x
+        let yPlayer = player.position.y
+        if  0 ... 240 ~= xPlayer && -720 ... -610 ~= yPlayer {
+            panel.removeFromParent()
+        }
     }
 }
