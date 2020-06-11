@@ -27,11 +27,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
 // set gyro
         motionManager.startAccelerometerUpdates()
-        motionManager.accelerometerUpdateInterval = 0.1
+        motionManager.accelerometerUpdateInterval = 0
         motionManager.startAccelerometerUpdates(to: OperationQueue.main){
             (data, error) in
             
-            self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)!) * 7, dy: CGFloat((data?.acceleration.y)!) * 7)
+            self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)!) * 3, dy: CGFloat((data?.acceleration.y)!) * 3)
             
         }
         
