@@ -11,7 +11,9 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
+    
+    @IBOutlet weak var wonView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
