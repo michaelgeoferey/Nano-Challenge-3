@@ -37,16 +37,8 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    //set game finish
     func didBegin(_ contact: SKPhysicsContact)  {
-        let playerMaze = contact.bodyA
-        let finishMaze = contact.bodyB
         
-        if playerMaze.categoryBitMask == 1 && finishMaze.categoryBitMask == 2 || playerMaze.categoryBitMask == 2 && finishMaze.categoryBitMask == 1 {
-            
-            print("Finish")
-            
-        }
     }
     
 

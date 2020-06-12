@@ -28,8 +28,6 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
             (data, error) in
             
             self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)!) * 3, dy: CGFloat((data?.acceleration.y)!) * 3)
-            
-            
         }
     }
     
@@ -53,7 +51,6 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
         
         if -80 ... 20 ~= playerPositionX && -560 ... -510 ~= playerPositionY {
             
-            holeCover.removeFromParent()
             
             
         }
