@@ -13,7 +13,7 @@ class MainMenuScene: SKScene {
     var pressContinue = SKSpriteNode()
     
     override func didMove(to view: SKView) {
-        pressStart = self.childNode(withName: "PressContinue") as! SKSpriteNode
+        pressContinue = self.childNode(withName: "PressContinue") as! SKSpriteNode
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -22,9 +22,9 @@ class MainMenuScene: SKScene {
             let pointOfTouch = touch.location(in: self)
             let skView = self.view as SKView?
             
-            if p.contains(pointOfTouch) {
+            if pressContinue.contains(pointOfTouch) {
                 
-                let sceneMoveTo = GameScene(fileNamed: "GameScene")
+                let sceneMoveTo = Onboard(fileNamed: "OnboardScene")
                 sceneMoveTo?.scaleMode = self.scaleMode
                 let sceneTransition = SKTransition.fade(withDuration: 1)
                 skView?.presentScene(sceneMoveTo!, transition: sceneTransition)

@@ -13,6 +13,10 @@
 		B00E84B82493230200EAEDD1 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = B00E84B72493230200EAEDD1 /* MainMenu.sks */; };
 		B00E84BC2493435900EAEDD1 /* OnboardScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B00E84BB2493435900EAEDD1 /* OnboardScene.sks */; };
 		B00E84BE249343E100EAEDD1 /* Onboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E84BD249343E100EAEDD1 /* Onboard.swift */; };
+		B01EF50724934AE40047F75E /* Chapter2Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B01EF50624934AE40047F75E /* Chapter2Scene.sks */; };
+		B01EF50A24934B150047F75E /* Chapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EF50924934B150047F75E /* Chapter2.swift */; };
+		B01EF50C2493DC3F0047F75E /* Chapter3Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B01EF50B2493DC3F0047F75E /* Chapter3Scene.sks */; };
+		B01EF50F2493DCA80047F75E /* Chapter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EF50E2493DCA80047F75E /* Chapter3.swift */; };
 		B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F80BF5248F688000FAF767 /* AppDelegate.swift */; };
 		B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF7248F688000FAF767 /* GameScene.sks */; };
 		B0F80BFA248F688000FAF767 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF9248F688000FAF767 /* Actions.sks */; };
@@ -32,6 +36,10 @@
 		B00E84B72493230200EAEDD1 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
 		B00E84BB2493435900EAEDD1 /* OnboardScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OnboardScene.sks; sourceTree = "<group>"; };
 		B00E84BD249343E100EAEDD1 /* Onboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard.swift; sourceTree = "<group>"; };
+		B01EF50624934AE40047F75E /* Chapter2Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Chapter2Scene.sks; sourceTree = "<group>"; };
+		B01EF50924934B150047F75E /* Chapter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2.swift; sourceTree = "<group>"; };
+		B01EF50B2493DC3F0047F75E /* Chapter3Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Chapter3Scene.sks; sourceTree = "<group>"; };
+		B01EF50E2493DCA80047F75E /* Chapter3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3.swift; sourceTree = "<group>"; };
 		B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F80BF5248F688000FAF767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F80BF7248F688000FAF767 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -93,6 +101,24 @@
 			path = "Chapter 1";
 			sourceTree = "<group>";
 		};
+		B01EF50824934AF20047F75E /* Chapter 2 */ = {
+			isa = PBXGroup;
+			children = (
+				B01EF50624934AE40047F75E /* Chapter2Scene.sks */,
+				B01EF50924934B150047F75E /* Chapter2.swift */,
+			);
+			path = "Chapter 2";
+			sourceTree = "<group>";
+		};
+		B01EF50D2493DC470047F75E /* Chapter 3 */ = {
+			isa = PBXGroup;
+			children = (
+				B01EF50B2493DC3F0047F75E /* Chapter3Scene.sks */,
+				B01EF50E2493DCA80047F75E /* Chapter3.swift */,
+			);
+			path = "Chapter 3";
+			sourceTree = "<group>";
+		};
 		B0F80BE9248F688000FAF767 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +145,8 @@
 				B0F80BFF248F688000FAF767 /* Main.storyboard */,
 				B0F80BF9248F688000FAF767 /* Actions.sks */,
 				B00E84BA249342F800EAEDD1 /* Chapter 1 */,
+				B01EF50824934AF20047F75E /* Chapter 2 */,
+				B01EF50D2493DC470047F75E /* Chapter 3 */,
 				B00E84B9249342DF00EAEDD1 /* Main Menu + Onboard */,
 				B00E84B424929D1100EAEDD1 /* Won View */,
 				B0F80C02248F688100FAF767 /* Assets.xcassets */,
@@ -187,10 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F80C01248F688000FAF767 /* Main.storyboard in Resources */,
+				B01EF50724934AE40047F75E /* Chapter2Scene.sks in Resources */,
 				B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */,
 				B00E84BC2493435900EAEDD1 /* OnboardScene.sks in Resources */,
 				B0F80C03248F688100FAF767 /* Assets.xcassets in Resources */,
 				B0F80C06248F688100FAF767 /* LaunchScreen.storyboard in Resources */,
+				B01EF50C2493DC3F0047F75E /* Chapter3Scene.sks in Resources */,
 				B0F80BFA248F688000FAF767 /* Actions.sks in Resources */,
 				B00E84B82493230200EAEDD1 /* MainMenu.sks in Resources */,
 				B00E84B124929B9D00EAEDD1 /* wonView.xib in Resources */,
@@ -206,8 +236,10 @@
 			files = (
 				B00E84BE249343E100EAEDD1 /* Onboard.swift in Sources */,
 				B0F80BFC248F688000FAF767 /* GameScene.swift in Sources */,
+				B01EF50A24934B150047F75E /* Chapter2.swift in Sources */,
 				B0F80C322490EE1E00FAF767 /* HelperExtension.swift in Sources */,
 				B0F80BFE248F688000FAF767 /* GameViewController.swift in Sources */,
+				B01EF50F2493DCA80047F75E /* Chapter3.swift in Sources */,
 				B00E84B624929E7A00EAEDD1 /* wonView.swift in Sources */,
 				B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */,
 				B00E84AC24928A5B00EAEDD1 /* MainMenuScene.swift in Sources */,

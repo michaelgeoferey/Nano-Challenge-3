@@ -1,21 +1,21 @@
 //
-//  GameScene.swift
+//  Chapter2.swift
 //  Nano Challenge 3
 //
-//  Created by Michael Geoferey on 09/06/20.
+//  Created by Michael Geoferey on 12/06/20.
 //  Copyright © 2020 Michael Geoferey. All rights reserved.
 //
 
+import UIKit
 import SpriteKit
-import GameplayKit
 import CoreMotion
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class Chapter2: SKScene, SKPhysicsContactDelegate {
     
-    let motionManager = CMMotionManager()
+    var hole = SKSpriteNode()
     var player = SKSpriteNode()
-    var endNode = SKSpriteNode()
-    
+    var holeCover = SKSpriteNode()
+    let motionManager = CMMotionManager()
     
     override func didMove(to view: SKView) {
         
@@ -23,7 +23,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
         
         player = self.childNode(withName: "player") as! SKSpriteNode
-        endNode = self.childNode(withName: "FinishBound") as! SKSpriteNode
+        holeCover = self.childNode(withName: "HoleCover") as! SKSpriteNode
         
         // set gyro
         motionManager.startAccelerometerUpdates()
@@ -33,6 +33,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)!) * 3, dy: CGFloat((data?.acceleration.y)!) * 3)
             
+            
         }
     }
     
@@ -40,17 +41,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact)  {
         let playerMaze = contact.bodyA
         let finishMaze = contact.bodyB
-        let skView = self.view as SKView?
         
         if playerMaze.categoryBitMask == 1 && finishMaze.categoryBitMask == 2 || playerMaze.categoryBitMask == 2 && finishMaze.categoryBitMask == 1 {
             
-            let sceneMoveTo = Chapter2(fileNamed: "Chapter2Scene")
-            sceneMoveTo?.scaleMode = self.scaleMode
-            let sceneTransition = SKTransition.fade(withDuration: 1)
-            skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+            print("Finish")
             
         }
     }
     
+
+    override func update(_ currentTime: TimeInterval) {
+        
+        let playerPositionX = player.position.x
+        let playerPositionY = player.position.y
+        
+        if -80 ... 20 ~= playerPositionX && -560 ... -510 ~= playerPositionY {
+           
+            holeCover.removeFromParent()
+            
+            
+        }
+    }
+        
 }
+    
 
