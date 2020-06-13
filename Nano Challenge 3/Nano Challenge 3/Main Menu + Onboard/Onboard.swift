@@ -24,7 +24,7 @@ class Onboard: SKScene{
                
                if pressStart.contains(pointOfTouch) {
                    
-                   let sceneMoveTo = GameScene(fileNamed: "GameScene")
+                   let sceneMoveTo = Splash1(fileNamed: "Splash1Scene")
                    sceneMoveTo?.scaleMode = self.scaleMode
                    let sceneTransition = SKTransition.fade(withDuration: 1)
                    skView?.presentScene(sceneMoveTo!, transition: sceneTransition)

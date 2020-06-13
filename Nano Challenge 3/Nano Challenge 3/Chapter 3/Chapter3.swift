@@ -35,24 +35,16 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact)  {
         let playerMaze = contact.bodyA
         let finishMaze = contact.bodyB
+        let skView = self.view as SKView?
         
         if playerMaze.categoryBitMask == 1 && finishMaze.categoryBitMask == 2 || playerMaze.categoryBitMask == 2 && finishMaze.categoryBitMask == 1 {
             
-            print("Finish")
+            let sceneMoveTo = Splash4(fileNamed: "Splash4")
+            sceneMoveTo?.scaleMode = self.scaleMode
+            let sceneTransition = SKTransition.fade(withDuration: 1)
+            skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
             
         }
     }
     
-    
-    override func update(_ currentTime: TimeInterval) {
-        
-        let playerPositionX = player.position.x
-        let playerPositionY = player.position.y
-        
-        if -80 ... 20 ~= playerPositionX && -560 ... -510 ~= playerPositionY {
-            
-            
-            
-        }
-    }
 }

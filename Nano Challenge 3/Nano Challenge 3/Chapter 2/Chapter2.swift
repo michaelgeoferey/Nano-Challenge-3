@@ -44,7 +44,7 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
         
         if playerMaze.categoryBitMask == 1 && finishMaze.categoryBitMask == 2 || playerMaze.categoryBitMask == 2 && finishMaze.categoryBitMask == 1 {
             
-            let sceneMoveTo = Chapter3(fileNamed: "Chapter3Scene")
+            let sceneMoveTo = Splash3(fileNamed: "Splash3Scene")
             sceneMoveTo?.scaleMode = self.scaleMode
             let sceneTransition = SKTransition.fade(withDuration: 1)
             skView?.presentScene(sceneMoveTo!, transition: sceneTransition)

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B00E84AC24928A5B00EAEDD1 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E84AB24928A5B00EAEDD1 /* MainMenuScene.swift */; };
-		B00E84B124929B9D00EAEDD1 /* wonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00E84B024929B9D00EAEDD1 /* wonView.xib */; };
-		B00E84B624929E7A00EAEDD1 /* wonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E84B524929E7A00EAEDD1 /* wonView.swift */; };
 		B00E84B82493230200EAEDD1 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = B00E84B72493230200EAEDD1 /* MainMenu.sks */; };
 		B00E84BC2493435900EAEDD1 /* OnboardScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B00E84BB2493435900EAEDD1 /* OnboardScene.sks */; };
 		B00E84BE249343E100EAEDD1 /* Onboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E84BD249343E100EAEDD1 /* Onboard.swift */; };
@@ -19,6 +17,14 @@
 		B01EF50F2493DCA80047F75E /* Chapter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EF50E2493DCA80047F75E /* Chapter3.swift */; };
 		B07F362E2494801100E719BB /* Chapter4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F362D2494801100E719BB /* Chapter4.swift */; };
 		B07F36302494802700E719BB /* Chapter4Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F362F2494802700E719BB /* Chapter4Scene.sks */; };
+		B07F36332494C94600E719BB /* Splash1Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F36322494C94600E719BB /* Splash1Scene.sks */; };
+		B07F36352494C95300E719BB /* Splash1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F36342494C95300E719BB /* Splash1.swift */; };
+		B07F36372494CC5300E719BB /* Splash2Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F36362494CC5300E719BB /* Splash2Scene.sks */; };
+		B07F36392494CC6700E719BB /* Splash2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F36382494CC6700E719BB /* Splash2.swift */; };
+		B07F363B2494CDD800E719BB /* Splash3Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F363A2494CDD800E719BB /* Splash3Scene.sks */; };
+		B07F363D2494CDE900E719BB /* Splash3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F363C2494CDE900E719BB /* Splash3.swift */; };
+		B07F363F2494CF2F00E719BB /* Splash4.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F363E2494CF2F00E719BB /* Splash4.sks */; };
+		B07F36412494CFED00E719BB /* Splash4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F36402494CFED00E719BB /* Splash4.swift */; };
 		B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F80BF5248F688000FAF767 /* AppDelegate.swift */; };
 		B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF7248F688000FAF767 /* GameScene.sks */; };
 		B0F80BFA248F688000FAF767 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF9248F688000FAF767 /* Actions.sks */; };
@@ -33,8 +39,6 @@
 /* Begin PBXFileReference section */
 		B00E84AB24928A5B00EAEDD1 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		B00E84AF2492914700EAEDD1 /* emulator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = emulator.ttf; sourceTree = "<group>"; };
-		B00E84B024929B9D00EAEDD1 /* wonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = wonView.xib; sourceTree = "<group>"; };
-		B00E84B524929E7A00EAEDD1 /* wonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = wonView.swift; path = ../../wonView.swift; sourceTree = "<group>"; };
 		B00E84B72493230200EAEDD1 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
 		B00E84BB2493435900EAEDD1 /* OnboardScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OnboardScene.sks; sourceTree = "<group>"; };
 		B00E84BD249343E100EAEDD1 /* Onboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard.swift; sourceTree = "<group>"; };
@@ -44,6 +48,14 @@
 		B01EF50E2493DCA80047F75E /* Chapter3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3.swift; sourceTree = "<group>"; };
 		B07F362D2494801100E719BB /* Chapter4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4.swift; sourceTree = "<group>"; };
 		B07F362F2494802700E719BB /* Chapter4Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Chapter4Scene.sks; sourceTree = "<group>"; };
+		B07F36322494C94600E719BB /* Splash1Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Splash1Scene.sks; sourceTree = "<group>"; };
+		B07F36342494C95300E719BB /* Splash1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash1.swift; sourceTree = "<group>"; };
+		B07F36362494CC5300E719BB /* Splash2Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Splash2Scene.sks; sourceTree = "<group>"; };
+		B07F36382494CC6700E719BB /* Splash2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash2.swift; sourceTree = "<group>"; };
+		B07F363A2494CDD800E719BB /* Splash3Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Splash3Scene.sks; sourceTree = "<group>"; };
+		B07F363C2494CDE900E719BB /* Splash3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash3.swift; sourceTree = "<group>"; };
+		B07F363E2494CF2F00E719BB /* Splash4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Splash4.sks; sourceTree = "<group>"; };
+		B07F36402494CFED00E719BB /* Splash4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash4.swift; sourceTree = "<group>"; };
 		B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F80BF5248F688000FAF767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F80BF7248F688000FAF767 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -74,15 +86,6 @@
 				B00E84AF2492914700EAEDD1 /* emulator.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		B00E84B424929D1100EAEDD1 /* Won View */ = {
-			isa = PBXGroup;
-			children = (
-				B00E84B024929B9D00EAEDD1 /* wonView.xib */,
-				B00E84B524929E7A00EAEDD1 /* wonView.swift */,
-			);
-			path = "Won View";
 			sourceTree = "<group>";
 		};
 		B00E84B9249342DF00EAEDD1 /* Main Menu + Onboard */ = {
@@ -132,6 +135,21 @@
 			path = "Chapter 4";
 			sourceTree = "<group>";
 		};
+		B07F36312494C90F00E719BB /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B07F36322494C94600E719BB /* Splash1Scene.sks */,
+				B07F36342494C95300E719BB /* Splash1.swift */,
+				B07F36362494CC5300E719BB /* Splash2Scene.sks */,
+				B07F36382494CC6700E719BB /* Splash2.swift */,
+				B07F363A2494CDD800E719BB /* Splash3Scene.sks */,
+				B07F363C2494CDE900E719BB /* Splash3.swift */,
+				B07F363E2494CF2F00E719BB /* Splash4.sks */,
+				B07F36402494CFED00E719BB /* Splash4.swift */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
 		B0F80BE9248F688000FAF767 = {
 			isa = PBXGroup;
 			children = (
@@ -157,12 +175,12 @@
 				B0F80C312490EE1E00FAF767 /* HelperExtension.swift */,
 				B0F80BFF248F688000FAF767 /* Main.storyboard */,
 				B0F80BF9248F688000FAF767 /* Actions.sks */,
+				B07F36312494C90F00E719BB /* Splash Screen */,
 				B00E84BA249342F800EAEDD1 /* Chapter 1 */,
 				B01EF50824934AF20047F75E /* Chapter 2 */,
 				B01EF50D2493DC470047F75E /* Chapter 3 */,
 				B07F362A24947FE200E719BB /* Chapter 4 */,
 				B00E84B9249342DF00EAEDD1 /* Main Menu + Onboard */,
-				B00E84B424929D1100EAEDD1 /* Won View */,
 				B0F80C02248F688100FAF767 /* Assets.xcassets */,
 				B0F80C04248F688100FAF767 /* LaunchScreen.storyboard */,
 				B0F80C07248F688100FAF767 /* Info.plist */,
@@ -230,15 +248,18 @@
 			files = (
 				B0F80C01248F688000FAF767 /* Main.storyboard in Resources */,
 				B01EF50724934AE40047F75E /* Chapter2Scene.sks in Resources */,
+				B07F36372494CC5300E719BB /* Splash2Scene.sks in Resources */,
 				B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */,
+				B07F363B2494CDD800E719BB /* Splash3Scene.sks in Resources */,
 				B00E84BC2493435900EAEDD1 /* OnboardScene.sks in Resources */,
+				B07F36332494C94600E719BB /* Splash1Scene.sks in Resources */,
 				B0F80C03248F688100FAF767 /* Assets.xcassets in Resources */,
 				B07F36302494802700E719BB /* Chapter4Scene.sks in Resources */,
+				B07F363F2494CF2F00E719BB /* Splash4.sks in Resources */,
 				B0F80C06248F688100FAF767 /* LaunchScreen.storyboard in Resources */,
 				B01EF50C2493DC3F0047F75E /* Chapter3Scene.sks in Resources */,
 				B0F80BFA248F688000FAF767 /* Actions.sks in Resources */,
 				B00E84B82493230200EAEDD1 /* MainMenu.sks in Resources */,
-				B00E84B124929B9D00EAEDD1 /* wonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +275,13 @@
 				B01EF50A24934B150047F75E /* Chapter2.swift in Sources */,
 				B0F80C322490EE1E00FAF767 /* HelperExtension.swift in Sources */,
 				B0F80BFE248F688000FAF767 /* GameViewController.swift in Sources */,
+				B07F36392494CC6700E719BB /* Splash2.swift in Sources */,
+				B07F36412494CFED00E719BB /* Splash4.swift in Sources */,
+				B07F363D2494CDE900E719BB /* Splash3.swift in Sources */,
 				B01EF50F2493DCA80047F75E /* Chapter3.swift in Sources */,
 				B07F362E2494801100E719BB /* Chapter4.swift in Sources */,
-				B00E84B624929E7A00EAEDD1 /* wonView.swift in Sources */,
 				B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */,
+				B07F36352494C95300E719BB /* Splash1.swift in Sources */,
 				B00E84AC24928A5B00EAEDD1 /* MainMenuScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
