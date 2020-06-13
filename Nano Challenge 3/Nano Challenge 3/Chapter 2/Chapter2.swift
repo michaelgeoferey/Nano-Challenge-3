@@ -38,6 +38,18 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
     }
     
     func didBegin(_ contact: SKPhysicsContact)  {
+        let playerMaze = contact.bodyA
+        let finishMaze = contact.bodyB
+        let skView = self.view as SKView?
+        
+        if playerMaze.categoryBitMask == 1 && finishMaze.categoryBitMask == 2 || playerMaze.categoryBitMask == 2 && finishMaze.categoryBitMask == 1 {
+            
+            let sceneMoveTo = Chapter3(fileNamed: "Chapter3Scene")
+            sceneMoveTo?.scaleMode = self.scaleMode
+            let sceneTransition = SKTransition.fade(withDuration: 1)
+            skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+            
+        }
         
     }
     
