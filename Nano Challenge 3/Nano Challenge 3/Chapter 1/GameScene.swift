@@ -15,6 +15,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let motionManager = CMMotionManager()
     var player = SKSpriteNode()
     var endNode = SKSpriteNode()
+    var restart = SKSpriteNode()
+    var menu = SKSpriteNode()
     
     
     override func didMove(to view: SKView) {
@@ -24,6 +26,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         player = self.childNode(withName: "player") as! SKSpriteNode
         endNode = self.childNode(withName: "FinishBound") as! SKSpriteNode
+        restart = self.childNode(withName: "Restart") as! SKSpriteNode
+        menu = self.childNode(withName: "Menu") as! SKSpriteNode
         
         // set gyro
         motionManager.startAccelerometerUpdates()
@@ -33,6 +37,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)!) * 3, dy: CGFloat((data?.acceleration.y)!) * 3)
             
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        for touch: AnyObject in touches{
+            let pointOfTouch = touch.location(in: self)
+            let skView = self.view as SKView?
+            
+            if restart.contains(pointOfTouch) {
+                
+                let sceneMoveTo = Splash1(fileNamed: "Splash1Scene")
+                sceneMoveTo?.scaleMode = self.scaleMode
+                let sceneTransition = SKTransition.fade(withDuration: 1)
+                skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                
+            } else if menu.contains(pointOfTouch) {
+                
+                let sceneMoveTo = SelectLevel(fileNamed: "SelectLevelScene")
+                sceneMoveTo?.scaleMode = self.scaleMode
+                let sceneTransition = SKTransition.fade(withDuration: 1)
+                skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+            }
         }
     }
     

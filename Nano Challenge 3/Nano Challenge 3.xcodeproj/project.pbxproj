@@ -25,6 +25,8 @@
 		B07F363D2494CDE900E719BB /* Splash3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F363C2494CDE900E719BB /* Splash3.swift */; };
 		B07F363F2494CF2F00E719BB /* Splash4.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F363E2494CF2F00E719BB /* Splash4.sks */; };
 		B07F36412494CFED00E719BB /* Splash4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F36402494CFED00E719BB /* Splash4.swift */; };
+		B07F36442494D14C00E719BB /* SelectLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F36432494D14C00E719BB /* SelectLevelScene.sks */; };
+		B07F36462494D32B00E719BB /* SelectLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F36452494D32B00E719BB /* SelectLevel.swift */; };
 		B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F80BF5248F688000FAF767 /* AppDelegate.swift */; };
 		B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF7248F688000FAF767 /* GameScene.sks */; };
 		B0F80BFA248F688000FAF767 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF9248F688000FAF767 /* Actions.sks */; };
@@ -56,6 +58,8 @@
 		B07F363C2494CDE900E719BB /* Splash3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash3.swift; sourceTree = "<group>"; };
 		B07F363E2494CF2F00E719BB /* Splash4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Splash4.sks; sourceTree = "<group>"; };
 		B07F36402494CFED00E719BB /* Splash4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash4.swift; sourceTree = "<group>"; };
+		B07F36432494D14C00E719BB /* SelectLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SelectLevelScene.sks; sourceTree = "<group>"; };
+		B07F36452494D32B00E719BB /* SelectLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevel.swift; sourceTree = "<group>"; };
 		B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F80BF5248F688000FAF767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F80BF7248F688000FAF767 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -129,8 +133,8 @@
 		B07F362A24947FE200E719BB /* Chapter 4 */ = {
 			isa = PBXGroup;
 			children = (
-				B07F362D2494801100E719BB /* Chapter4.swift */,
 				B07F362F2494802700E719BB /* Chapter4Scene.sks */,
+				B07F362D2494801100E719BB /* Chapter4.swift */,
 			);
 			path = "Chapter 4";
 			sourceTree = "<group>";
@@ -148,6 +152,15 @@
 				B07F36402494CFED00E719BB /* Splash4.swift */,
 			);
 			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		B07F36422494D11800E719BB /* Select Level */ = {
+			isa = PBXGroup;
+			children = (
+				B07F36432494D14C00E719BB /* SelectLevelScene.sks */,
+				B07F36452494D32B00E719BB /* SelectLevel.swift */,
+			);
+			path = "Select Level";
 			sourceTree = "<group>";
 		};
 		B0F80BE9248F688000FAF767 = {
@@ -175,12 +188,13 @@
 				B0F80C312490EE1E00FAF767 /* HelperExtension.swift */,
 				B0F80BFF248F688000FAF767 /* Main.storyboard */,
 				B0F80BF9248F688000FAF767 /* Actions.sks */,
+				B00E84B9249342DF00EAEDD1 /* Main Menu + Onboard */,
 				B07F36312494C90F00E719BB /* Splash Screen */,
+				B07F36422494D11800E719BB /* Select Level */,
 				B00E84BA249342F800EAEDD1 /* Chapter 1 */,
 				B01EF50824934AF20047F75E /* Chapter 2 */,
 				B01EF50D2493DC470047F75E /* Chapter 3 */,
 				B07F362A24947FE200E719BB /* Chapter 4 */,
-				B00E84B9249342DF00EAEDD1 /* Main Menu + Onboard */,
 				B0F80C02248F688100FAF767 /* Assets.xcassets */,
 				B0F80C04248F688100FAF767 /* LaunchScreen.storyboard */,
 				B0F80C07248F688100FAF767 /* Info.plist */,
@@ -246,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F36442494D14C00E719BB /* SelectLevelScene.sks in Resources */,
 				B0F80C01248F688000FAF767 /* Main.storyboard in Resources */,
 				B01EF50724934AE40047F75E /* Chapter2Scene.sks in Resources */,
 				B07F36372494CC5300E719BB /* Splash2Scene.sks in Resources */,
@@ -280,6 +295,7 @@
 				B07F363D2494CDE900E719BB /* Splash3.swift in Sources */,
 				B01EF50F2493DCA80047F75E /* Chapter3.swift in Sources */,
 				B07F362E2494801100E719BB /* Chapter4.swift in Sources */,
+				B07F36462494D32B00E719BB /* SelectLevel.swift in Sources */,
 				B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */,
 				B07F36352494C95300E719BB /* Splash1.swift in Sources */,
 				B00E84AC24928A5B00EAEDD1 /* MainMenuScene.swift in Sources */,
