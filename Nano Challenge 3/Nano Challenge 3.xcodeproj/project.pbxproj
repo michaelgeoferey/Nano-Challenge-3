@@ -27,6 +27,10 @@
 		B07F36412494CFED00E719BB /* Splash4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F36402494CFED00E719BB /* Splash4.swift */; };
 		B07F36442494D14C00E719BB /* SelectLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B07F36432494D14C00E719BB /* SelectLevelScene.sks */; };
 		B07F36462494D32B00E719BB /* SelectLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F36452494D32B00E719BB /* SelectLevel.swift */; };
+		B07F364A2496233F00E719BB /* onboardBGM.wav in Resources */ = {isa = PBXBuildFile; fileRef = B07F36482496233F00E719BB /* onboardBGM.wav */; };
+		B07F364B2496233F00E719BB /* gameBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07F36492496233F00E719BB /* gameBGM.mp3 */; };
+		B07F364C249680A600E719BB /* emulator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B00E84AF2492914700EAEDD1 /* emulator.ttf */; };
+		B07F364E249696B700E719BB /* finish.wav in Resources */ = {isa = PBXBuildFile; fileRef = B07F364D249696B700E719BB /* finish.wav */; };
 		B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F80BF5248F688000FAF767 /* AppDelegate.swift */; };
 		B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF7248F688000FAF767 /* GameScene.sks */; };
 		B0F80BFA248F688000FAF767 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF9248F688000FAF767 /* Actions.sks */; };
@@ -60,6 +64,9 @@
 		B07F36402494CFED00E719BB /* Splash4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash4.swift; sourceTree = "<group>"; };
 		B07F36432494D14C00E719BB /* SelectLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SelectLevelScene.sks; sourceTree = "<group>"; };
 		B07F36452494D32B00E719BB /* SelectLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevel.swift; sourceTree = "<group>"; };
+		B07F36482496233F00E719BB /* onboardBGM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = onboardBGM.wav; sourceTree = "<group>"; };
+		B07F36492496233F00E719BB /* gameBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameBGM.mp3; sourceTree = "<group>"; };
+		B07F364D249696B700E719BB /* finish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finish.wav; sourceTree = "<group>"; };
 		B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F80BF5248F688000FAF767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F80BF7248F688000FAF767 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -163,6 +170,16 @@
 			path = "Select Level";
 			sourceTree = "<group>";
 		};
+		B07F36472496232B00E719BB /* Audio Asset */ = {
+			isa = PBXGroup;
+			children = (
+				B07F36492496233F00E719BB /* gameBGM.mp3 */,
+				B07F36482496233F00E719BB /* onboardBGM.wav */,
+				B07F364D249696B700E719BB /* finish.wav */,
+			);
+			path = "Audio Asset";
+			sourceTree = "<group>";
+		};
 		B0F80BE9248F688000FAF767 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +200,7 @@
 		B0F80BF4248F688000FAF767 /* Nano Challenge 3 */ = {
 			isa = PBXGroup;
 			children = (
+				B07F36472496232B00E719BB /* Audio Asset */,
 				B0F80BF5248F688000FAF767 /* AppDelegate.swift */,
 				B0F80BFD248F688000FAF767 /* GameViewController.swift */,
 				B0F80C312490EE1E00FAF767 /* HelperExtension.swift */,
@@ -260,8 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F364C249680A600E719BB /* emulator.ttf in Resources */,
+				B07F364B2496233F00E719BB /* gameBGM.mp3 in Resources */,
 				B07F36442494D14C00E719BB /* SelectLevelScene.sks in Resources */,
 				B0F80C01248F688000FAF767 /* Main.storyboard in Resources */,
+				B07F364A2496233F00E719BB /* onboardBGM.wav in Resources */,
 				B01EF50724934AE40047F75E /* Chapter2Scene.sks in Resources */,
 				B07F36372494CC5300E719BB /* Splash2Scene.sks in Resources */,
 				B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */,
@@ -270,6 +291,7 @@
 				B07F36332494C94600E719BB /* Splash1Scene.sks in Resources */,
 				B0F80C03248F688100FAF767 /* Assets.xcassets in Resources */,
 				B07F36302494802700E719BB /* Chapter4Scene.sks in Resources */,
+				B07F364E249696B700E719BB /* finish.wav in Resources */,
 				B07F363F2494CF2F00E719BB /* Splash4.sks in Resources */,
 				B0F80C06248F688100FAF767 /* LaunchScreen.storyboard in Resources */,
 				B01EF50C2493DC3F0047F75E /* Chapter3Scene.sks in Resources */,

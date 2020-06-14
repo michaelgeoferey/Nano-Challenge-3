@@ -11,9 +11,12 @@ import SpriteKit
 class MainMenuScene: SKScene {
     
     var pressContinue = SKSpriteNode()
+    let backgroundMusic = SKAudioNode(fileNamed: "onboardBGM.wav")
     
     override func didMove(to view: SKView) {
         pressContinue = self.childNode(withName: "PressContinue") as! SKSpriteNode
+        self.addChild(backgroundMusic)
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
