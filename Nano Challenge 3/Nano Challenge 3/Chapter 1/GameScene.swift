@@ -23,7 +23,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var sound = SKSpriteNode()
     var timer = Timer()
     let backgroundMusic = SKAudioNode(fileNamed: "gameBGM.mp3")
-    let finisMusic = SKAudioNode(fileNamed: "finish.wav")
+    let finishMusic = SKAudioNode(fileNamed: "finish.wav")
     
     
     override func didMove(to view: SKView) {
@@ -37,6 +37,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         sound = self.childNode(withName: "Sound") as! SKSpriteNode
         timerLabel = self.childNode(withName: "TimeLabel") as! SKLabelNode
         self.addChild(backgroundMusic)
+        finishMusic.autoplayLooped = false
+        self.addChild(finishMusic)
         
         // set gyro
         motionManager.startAccelerometerUpdates()
@@ -59,7 +61,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let pointOfTouch = touch.location(in: self)
             let skView = self.view as SKView?
             var mute: Bool = false
-
+            
             
             if restart.contains(pointOfTouch) {
                 
@@ -91,7 +93,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     print ("test")
                     backgroundMusic.run(SKAction.play())
                 }
-
+                
             }
         }
     }
@@ -107,9 +109,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             let sceneMoveTo = Splash2(fileNamed: "Splash2Scene")
             sceneMoveTo?.scaleMode = self.scaleMode
-            let sceneTransition = SKTransition.fade(withDuration: 1)
-            skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+            let sceneTransition = SKTransition.fade(withDuration: 3)
+            let pauseBGM = SKAction.run {
+                self.backgroundMusic.run(SKAction.stop())
+            }
+            let playBGM = SKAction.run {
+                self.finishMusic.run(SKAction.play())
+            }
+            let sequence = SKAction.sequence(
+                [pauseBGM,playBGM,SKAction.wait(forDuration: 1),
+                SKAction.run {
+                    skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                }])
+            
+            run(sequence)
+            
+            
             timer.invalidate()
+            
             
         }
     }

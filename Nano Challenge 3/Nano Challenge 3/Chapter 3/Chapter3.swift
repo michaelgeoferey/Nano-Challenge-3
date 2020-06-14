@@ -20,6 +20,7 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
     var menu = SKSpriteNode()
     var timer = Timer()
     let backgroundMusic = SKAudioNode(fileNamed: "gameBGM.mp3")
+    let finishMusic = SKAudioNode(fileNamed: "finish.wav")
     
     override func didMove(to view: SKView) {
         
@@ -31,6 +32,8 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
         menu = self.childNode(withName: "Menu") as! SKSpriteNode
         timerLabel3 = self.childNode(withName: "TimeLabel") as! SKLabelNode
         self.addChild(backgroundMusic)
+        finishMusic.autoplayLooped = false
+        self.addChild(finishMusic)
         
         // set gyro
         motionManager.startAccelerometerUpdates()
@@ -84,7 +87,18 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
             let sceneMoveTo = Splash4(fileNamed: "Splash4")
             sceneMoveTo?.scaleMode = self.scaleMode
             let sceneTransition = SKTransition.fade(withDuration: 1)
-            skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+            let pauseBGM = SKAction.run {
+                self.backgroundMusic.run(SKAction.stop())
+            }
+            let playBGM = SKAction.run {
+                self.finishMusic.run(SKAction.play())
+            }
+            let sequence = SKAction.sequence(
+                [pauseBGM,playBGM,SKAction.wait(forDuration: 1),
+                SKAction.run {
+                    skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                }])
+            run(sequence)
             timer.invalidate()
             
         }
