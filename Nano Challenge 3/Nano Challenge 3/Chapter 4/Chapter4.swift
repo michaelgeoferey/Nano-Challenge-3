@@ -66,6 +66,7 @@ class Chapter4: SKScene, SKPhysicsContactDelegate {
                 let sceneTransition = SKTransition.fade(withDuration: 1)
                 skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
                 timer.invalidate()
+                (minute4,second4,fragment4) = (0,0,0)
                 timerLabel4.text = "00:00.00"
                 
             } else if menu.contains(pointOfTouch) {
@@ -75,6 +76,7 @@ class Chapter4: SKScene, SKPhysicsContactDelegate {
                 let sceneTransition = SKTransition.fade(withDuration: 1)
                 skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
                 timer.invalidate()
+                (minute4,second4,fragment4) = (0,0,0)
                 timerLabel4.text = "00:00.00"
             }
         }
