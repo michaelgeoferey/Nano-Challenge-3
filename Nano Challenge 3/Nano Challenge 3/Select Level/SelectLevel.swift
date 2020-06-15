@@ -19,6 +19,7 @@ class SelectLevel: SKScene {
     var timeLabel3 = SKLabelNode()
     var timeLabel4 = SKLabelNode()
     var chapterSoon = SKSpriteNode()
+    let clickSound = SKAudioNode(fileNamed: "click.wav")
     
     
     override func didMove(to view: SKView) {
@@ -32,10 +33,12 @@ class SelectLevel: SKScene {
         timeLabel3 = self.childNode(withName: "BestTime3") as! SKLabelNode
         timeLabel4 = self.childNode(withName: "BestTime4") as! SKLabelNode
         chapterSoon = self.childNode(withName: "ChapterSoon") as! SKSpriteNode
+        clickSound.autoplayLooped = false
+        self.addChild(clickSound)
         
         //set best time1
-        let defaults = UserDefaults()
-        var bestTime1 = defaults.integer(forKey: "bestTimeSaved")
+        //        let defaults = UserDefaults()
+        //        var bestTime1 = defaults.integer(forKey: "bestTimeSaved")
         let secondDoubleString = second > 9 ? "\(second)" : "0\(second)"
         let minuteDoubleString = minute > 9 ? "\(minute)" : "0\(minute)"
         timeLabel1.text = ("\(minuteDoubleString):\(secondDoubleString).\(fragment)")
