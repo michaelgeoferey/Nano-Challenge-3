@@ -21,6 +21,7 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
     let motionManager = CMMotionManager()
     var restart = SKSpriteNode()
     var menu = SKSpriteNode()
+    var sound = SKSpriteNode()
     var timer = Timer()
     let backgroundMusic = SKAudioNode(fileNamed: "gameBGM.mp3")
     let finishMusic = SKAudioNode(fileNamed: "finish.wav")
@@ -34,6 +35,7 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
         holeCover = self.childNode(withName: "HoleCover") as! SKSpriteNode
         restart = self.childNode(withName: "Restart") as! SKSpriteNode
         menu = self.childNode(withName: "Menu") as! SKSpriteNode
+        sound = self.childNode(withName: "Sound") as! SKSpriteNode
         timerLabel2 = self.childNode(withName: "TimeLabel") as! SKLabelNode
         self.addChild(backgroundMusic)
         finishMusic.autoplayLooped = false
@@ -78,6 +80,17 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
                 timer.invalidate()
                 (minute2,second2,fragment2) = (0,0,0)
                 timerLabel2.text = "00:00.00"
+                
+        //func for mute sound
+            } else if sound.contains(pointOfTouch){
+               btnCount += 1
+                if btnCount % 2 == 0 {
+                    backgroundMusic.run(SKAction.play())
+                    sound.run(SKAction.fadeAlpha(to: 1, duration: 0))
+                } else {
+                    backgroundMusic.run(SKAction.stop())
+                    sound.run(SKAction.fadeAlpha(to: 0, duration: 0))
+                }
             }
         }
     }
@@ -94,7 +107,7 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    
+   //finish game
     func didBegin(_ contact: SKPhysicsContact)  {
         let playerMaze = contact.bodyA
         let finishMaze = contact.bodyB
@@ -132,7 +145,7 @@ class Chapter2: SKScene, SKPhysicsContactDelegate {
             second2 += 1
             fragment2 = 0
             
-        } else if second2 > 60 {
+        } else if second2 > 59 {
             minute2 += 1
             second2 = 0
         }

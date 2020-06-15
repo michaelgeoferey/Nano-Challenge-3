@@ -12,6 +12,7 @@ import CoreMotion
 
 var timerLabel = SKLabelNode()
 var (minute,second,fragment) = (0,0,0)
+var btnCount = 0
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
@@ -60,8 +61,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         for touch: AnyObject in touches{
             let pointOfTouch = touch.location(in: self)
             let skView = self.view as SKView?
-            var mute: Bool = false
-            
             
             if restart.contains(pointOfTouch) {
                 
@@ -83,20 +82,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 (minute,second,fragment) = (0,0,0)
                 timerLabel.text = "00:00.00"
                 
+       //func for mute sound
+            } else if sound.contains(pointOfTouch){
+               btnCount += 1
+                if btnCount % 2 == 0 {
+                    backgroundMusic.run(SKAction.play())
+                    sound.run(SKAction.fadeAlpha(to: 1, duration: 0))
+                } else {
+                    backgroundMusic.run(SKAction.stop())
+                    sound.run(SKAction.fadeAlpha(to: 0, duration: 0))
+                }
             }
             
-            if sound.contains(pointOfTouch){
-                if mute {
-                    mute = false
-                    print ("Turn off")
-                    backgroundMusic.run(SKAction.pause())
-                    
-                } else {
-                    print ("test")
-                    backgroundMusic.run(SKAction.play())
-                }
-                
-            }
         }
     }
     
@@ -141,7 +138,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             second += 1
             fragment = 0
             
-        } else if second > 60 {
+        } else if second > 59 {
             minute += 1
             second = 0
         }

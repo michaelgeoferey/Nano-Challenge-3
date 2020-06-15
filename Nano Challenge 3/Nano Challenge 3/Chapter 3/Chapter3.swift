@@ -18,6 +18,7 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
     let motionManager = CMMotionManager()
     var restart = SKSpriteNode()
     var menu = SKSpriteNode()
+    var sound = SKSpriteNode()
     var timer = Timer()
     let backgroundMusic = SKAudioNode(fileNamed: "gameBGM.mp3")
     let finishMusic = SKAudioNode(fileNamed: "finish.wav")
@@ -30,6 +31,7 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
         player = self.childNode(withName: "player") as! SKSpriteNode
         restart = self.childNode(withName: "Restart") as! SKSpriteNode
         menu = self.childNode(withName: "Menu") as! SKSpriteNode
+        sound = self.childNode(withName: "Sound") as! SKSpriteNode
         timerLabel3 = self.childNode(withName: "TimeLabel") as! SKLabelNode
         self.addChild(backgroundMusic)
         finishMusic.autoplayLooped = false
@@ -74,6 +76,17 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
                 timer.invalidate()
                 (minute3,second3,fragment3) = (0,0,0)
                 timerLabel3.text = "00:00.00"
+          
+          //func for mute sound
+            } else if sound.contains(pointOfTouch){
+               btnCount += 1
+                if btnCount % 2 == 0 {
+                    backgroundMusic.run(SKAction.play())
+                    sound.run(SKAction.fadeAlpha(to: 1, duration: 0))
+                } else {
+                    backgroundMusic.run(SKAction.stop())
+                    sound.run(SKAction.fadeAlpha(to: 0, duration: 0))
+                }
             }
         }
     }
@@ -114,7 +127,7 @@ class Chapter3: SKScene, SKPhysicsContactDelegate {
                second3 += 1
                fragment3 = 0
                
-           } else if second3 > 60 {
+           } else if second3 > 59 {
                minute3 += 1
                second3 = 0
            }

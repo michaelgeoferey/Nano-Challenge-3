@@ -20,6 +20,7 @@ class Chapter4: SKScene, SKPhysicsContactDelegate {
     let motionManager = CMMotionManager()
     var restart = SKSpriteNode()
     var menu = SKSpriteNode()
+    var sound = SKSpriteNode()
     var timer = Timer()
     let backgroundMusic = SKAudioNode(fileNamed: "gameBGM.mp3")
     let finishMusic = SKAudioNode(fileNamed: "finish.wav")
@@ -34,6 +35,7 @@ class Chapter4: SKScene, SKPhysicsContactDelegate {
         pinkDoor = self.childNode(withName: "DoorPink") as! SKSpriteNode
         restart = self.childNode(withName: "Restart") as! SKSpriteNode
         menu = self.childNode(withName: "Menu") as! SKSpriteNode
+        sound = self.childNode(withName: "Sound") as! SKSpriteNode
         timerLabel4 = self.childNode(withName: "TimeLabel") as! SKLabelNode
         self.addChild(backgroundMusic)
         finishMusic.autoplayLooped = false
@@ -78,6 +80,17 @@ class Chapter4: SKScene, SKPhysicsContactDelegate {
                 timer.invalidate()
                 (minute4,second4,fragment4) = (0,0,0)
                 timerLabel4.text = "00:00.00"
+                
+        //func mute unmute sound
+            } else if sound.contains(pointOfTouch){
+               btnCount += 1
+                if btnCount % 2 == 0 {
+                    backgroundMusic.run(SKAction.play())
+                    sound.run(SKAction.fadeAlpha(to: 1, duration: 0))
+                } else {
+                    backgroundMusic.run(SKAction.stop())
+                    sound.run(SKAction.fadeAlpha(to: 0, duration: 0))
+                }
             }
         }
     }
@@ -136,7 +149,7 @@ class Chapter4: SKScene, SKPhysicsContactDelegate {
             second4 += 1
             fragment4 = 0
             
-        } else if second4 > 60 {
+        } else if second4 > 59 {
             minute4 += 1
             second4 = 0
         }
