@@ -19,7 +19,7 @@ class SelectLevel: SKScene {
     var timeLabel3 = SKLabelNode()
     var timeLabel4 = SKLabelNode()
     var chapterSoon = SKSpriteNode()
-    let clickSound = SKAudioNode(fileNamed: "click.wav")
+    let clickSound = SKAudioNode(fileNamed: "clicked.wav")
     
     
     override func didMove(to view: SKView) {
@@ -73,28 +73,64 @@ class SelectLevel: SKScene {
                 let sceneMoveTo = Splash1(fileNamed: "Splash1Scene")
                 sceneMoveTo?.scaleMode = self.scaleMode
                 let sceneTransition = SKTransition.fade(withDuration: 1)
-                skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                let wait = SKAction.wait(forDuration: 0.8)
+                let soundClick = SKAction.run {
+                    self.clickSound.run(SKAction.play())
+                }
+                let sequence = SKAction.sequence([soundClick,wait,
+                    SKAction.run {
+                    skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                    }
+                ])
+                run(sequence)
                 
             } else if chapter2.contains(pointOfTouch) {
                 
                 let sceneMoveTo = Splash2(fileNamed: "Splash2Scene")
                 sceneMoveTo?.scaleMode = self.scaleMode
                 let sceneTransition = SKTransition.fade(withDuration: 1)
-                skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                let wait = SKAction.wait(forDuration: 0.8)
+                let soundClick = SKAction.run {
+                    self.clickSound.run(SKAction.play())
+                }
+                let sequence = SKAction.sequence([soundClick,wait,
+                    SKAction.run {
+                    skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                    }
+                ])
+                run(sequence)
                 
             } else if chapter3.contains(pointOfTouch) {
                 
                 let sceneMoveTo = Splash3(fileNamed: "Splash3Scene")
                 sceneMoveTo?.scaleMode = self.scaleMode
                 let sceneTransition = SKTransition.fade(withDuration: 1)
-                skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                let wait = SKAction.wait(forDuration: 0.8)
+                let soundClick = SKAction.run {
+                    self.clickSound.run(SKAction.play())
+                }
+                let sequence = SKAction.sequence([soundClick,wait,
+                    SKAction.run {
+                    skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                    }
+                ])
+                run(sequence)
                 
             } else if chapter4.contains(pointOfTouch) {
                 
                 let sceneMoveTo = Splash4(fileNamed: "Splash4")
                 sceneMoveTo?.scaleMode = self.scaleMode
                 let sceneTransition = SKTransition.fade(withDuration: 1)
-                skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                let wait = SKAction.wait(forDuration: 0.8)
+                let soundClick = SKAction.run {
+                    self.clickSound.run(SKAction.play())
+                }
+                let sequence = SKAction.sequence([soundClick,wait,
+                    SKAction.run {
+                    skView?.presentScene(sceneMoveTo!, transition: sceneTransition)
+                    }
+                ])
+                run(sequence)
                 
             }
         }

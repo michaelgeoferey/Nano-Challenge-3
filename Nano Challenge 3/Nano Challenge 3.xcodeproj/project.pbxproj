@@ -31,7 +31,7 @@
 		B07F364B2496233F00E719BB /* gameBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07F36492496233F00E719BB /* gameBGM.mp3 */; };
 		B07F364C249680A600E719BB /* emulator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B00E84AF2492914700EAEDD1 /* emulator.ttf */; };
 		B07F364E249696B700E719BB /* finish.wav in Resources */ = {isa = PBXBuildFile; fileRef = B07F364D249696B700E719BB /* finish.wav */; };
-		B07F365024969E9800E719BB /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = B07F364F24969E9800E719BB /* click.wav */; };
+		B07F36522497698A00E719BB /* clicked.wav in Resources */ = {isa = PBXBuildFile; fileRef = B07F36512497698A00E719BB /* clicked.wav */; };
 		B0F80BF6248F688000FAF767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F80BF5248F688000FAF767 /* AppDelegate.swift */; };
 		B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF7248F688000FAF767 /* GameScene.sks */; };
 		B0F80BFA248F688000FAF767 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F80BF9248F688000FAF767 /* Actions.sks */; };
@@ -68,7 +68,7 @@
 		B07F36482496233F00E719BB /* onboardBGM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = onboardBGM.wav; sourceTree = "<group>"; };
 		B07F36492496233F00E719BB /* gameBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameBGM.mp3; sourceTree = "<group>"; };
 		B07F364D249696B700E719BB /* finish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finish.wav; sourceTree = "<group>"; };
-		B07F364F24969E9800E719BB /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		B07F36512497698A00E719BB /* clicked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clicked.wav; sourceTree = "<group>"; };
 		B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F80BF5248F688000FAF767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F80BF7248F688000FAF767 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				B07F36492496233F00E719BB /* gameBGM.mp3 */,
 				B07F36482496233F00E719BB /* onboardBGM.wav */,
 				B07F364D249696B700E719BB /* finish.wav */,
-				B07F364F24969E9800E719BB /* click.wav */,
+				B07F36512497698A00E719BB /* clicked.wav */,
 			);
 			path = "Audio Asset";
 			sourceTree = "<group>";
@@ -284,10 +284,10 @@
 				B07F364C249680A600E719BB /* emulator.ttf in Resources */,
 				B07F364B2496233F00E719BB /* gameBGM.mp3 in Resources */,
 				B07F36442494D14C00E719BB /* SelectLevelScene.sks in Resources */,
-				B07F365024969E9800E719BB /* click.wav in Resources */,
 				B0F80C01248F688000FAF767 /* Main.storyboard in Resources */,
 				B07F364A2496233F00E719BB /* onboardBGM.wav in Resources */,
 				B01EF50724934AE40047F75E /* Chapter2Scene.sks in Resources */,
+				B07F36522497698A00E719BB /* clicked.wav in Resources */,
 				B07F36372494CC5300E719BB /* Splash2Scene.sks in Resources */,
 				B0F80BF8248F688000FAF767 /* GameScene.sks in Resources */,
 				B07F363B2494CDD800E719BB /* Splash3Scene.sks in Resources */,

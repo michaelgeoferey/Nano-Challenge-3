@@ -37,6 +37,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         menu = self.childNode(withName: "Menu") as! SKSpriteNode
         sound = self.childNode(withName: "Sound") as! SKSpriteNode
         timerLabel = self.childNode(withName: "TimeLabel") as! SKLabelNode
+        
         self.addChild(backgroundMusic)
         finishMusic.autoplayLooped = false
         self.addChild(finishMusic)
