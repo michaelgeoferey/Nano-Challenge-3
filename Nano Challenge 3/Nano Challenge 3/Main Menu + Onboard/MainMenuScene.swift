@@ -15,6 +15,7 @@ class MainMenuScene: SKScene {
     
     override func didMove(to view: SKView) {
         pressContinue = self.childNode(withName: "PressContinue") as! SKSpriteNode
+//        self.run(SKAction.playSoundFileNamed("onboardBGM.wav", waitForCompletion: true))
         self.addChild(backgroundMusic)
 
     }
