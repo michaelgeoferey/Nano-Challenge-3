@@ -15,7 +15,7 @@ class Onboard: SKScene{
     
     override func didMove(to view: SKView) {
         pressStart = self.childNode(withName: "PressStart") as! SKSpriteNode
-//        self.addChild(backgroundMusic)
+        self.addChild(backgroundMusic)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
