@@ -186,7 +186,7 @@
 		B0F80BE9248F688000FAF767 = {
 			isa = PBXGroup;
 			children = (
-				B0F80BF4248F688000FAF767 /* Tomb Scout */,
+				B0F80BF4248F688000FAF767 /* Nano Challenge 3 */,
 				B00E84AE2492913800EAEDD1 /* Fonts */,
 				B0F80BF3248F688000FAF767 /* Products */,
 			);
@@ -200,7 +200,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0F80BF4248F688000FAF767 /* Tomb Scout */ = {
+		B0F80BF4248F688000FAF767 /* Nano Challenge 3 */ = {
 			isa = PBXGroup;
 			children = (
 				B07F36472496232B00E719BB /* Audio Asset */,
@@ -220,7 +220,7 @@
 				B0F80C04248F688100FAF767 /* LaunchScreen.storyboard */,
 				B0F80C07248F688100FAF767 /* Info.plist */,
 			);
-			path = "Tomb Scout";
+			path = "Nano Challenge 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +258,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B0F80BED248F688000FAF767 /* Build configuration list for PBXProject "Tomb Scout" */;
+			buildConfigurationList = B0F80BED248F688000FAF767 /* Build configuration list for PBXProject "Nano Challenge 3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -470,13 +470,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZFL7YS72Y3;
-				INFOPLIST_FILE = "Tomb Scout/Info.plist";
+				INFOPLIST_FILE = "Nano Challenge 3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD:Tomb Scout/Tomb Scout.xcodeproj/project.pbxproj
 				PRODUCT_BUNDLE_IDENTIFIER = "tombscout.Nano-Challenge-3";
 				PRODUCT_NAME = "Tomb Scout";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = "nanochallenge3.Nano-Challenge-3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+>>>>>>> parent of 05218e1... change name:Nano Challenge 3/Nano Challenge 3.xcodeproj/project.pbxproj
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,13 +493,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZFL7YS72Y3;
-				INFOPLIST_FILE = "Tomb Scout/Info.plist";
+				INFOPLIST_FILE = "Nano Challenge 3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD:Tomb Scout/Tomb Scout.xcodeproj/project.pbxproj
 				PRODUCT_BUNDLE_IDENTIFIER = "tombscout.Nano-Challenge-3";
 				PRODUCT_NAME = "Tomb Scout";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = "nanochallenge3.Nano-Challenge-3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+>>>>>>> parent of 05218e1... change name:Nano Challenge 3/Nano Challenge 3.xcodeproj/project.pbxproj
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -503,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0F80BED248F688000FAF767 /* Build configuration list for PBXProject "Tomb Scout" */ = {
+		B0F80BED248F688000FAF767 /* Build configuration list for PBXProject "Nano Challenge 3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0F80C08248F688100FAF767 /* Debug */,
