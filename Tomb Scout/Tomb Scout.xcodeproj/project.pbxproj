@@ -69,7 +69,7 @@
 		B07F36492496233F00E719BB /* gameBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameBGM.mp3; sourceTree = "<group>"; };
 		B07F364D249696B700E719BB /* finish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finish.wav; sourceTree = "<group>"; };
 		B07F36512497698A00E719BB /* clicked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clicked.wav; sourceTree = "<group>"; };
-		B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F80BF2248F688000FAF767 /* Tomb Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomb Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F80BF5248F688000FAF767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F80BF7248F688000FAF767 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		B0F80BF9248F688000FAF767 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		B0F80BF3248F688000FAF767 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */,
+				B0F80BF2248F688000FAF767 /* Tomb Scout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 			);
 			name = "Nano Challenge 3";
 			productName = "Nano Challenge 3";
-			productReference = B0F80BF2248F688000FAF767 /* Nano Challenge 3.app */;
+			productReference = B0F80BF2248F688000FAF767 /* Tomb Scout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -476,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tombscout.Nano-Challenge-3";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tomb Scout";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,7 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tombscout.Nano-Challenge-3";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tomb Scout";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
